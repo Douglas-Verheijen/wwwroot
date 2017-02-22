@@ -1,0 +1,126 @@
+﻿button,
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    border-radius: 0;
+}
+button {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+    vertical-align: middle;
+}
+::-moz-placeholder {
+    opacity: 1;
+}
+
+.form-group {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.form-control-label,
+.form-control,
+.form-submit {
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control-label {
+    width: 29%;
+}
+
+.form-control-label label {
+    width: 100%;
+    height: auto;
+}
+
+
+.form-control {
+    width: 70%;
+}
+
+.form-control input[type=text],
+.form-control input[type=email],
+.form-control input[type=tel],
+.form-control textarea {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 3px 6px 4px;
+    border: solid #afbac1;
+    border-width: 0 0 1px;
+    background: #ededed;
+    color: #020202;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s;
+}
+
+.form-control select:focus,
+.form-control textarea:focus,
+.form-control input:not([type]):focus,
+.form-control input[type="text"]:focus,
+.form-control input[type="tel"]:focus,
+.form-control input[type="email"]:focus,
+.form-control input[type="password"]:focus {
+    border-color: #0f7faf;
+    outline: 0;
+    background: #ecf5f9;
+    color: #020202;
+}
+
+.form-control select[disabled],
+.form-control textarea[disabled],
+.form-control input:not([type])[disabled],
+.form-control input[type="text"][disabled],
+.form-control input[type="tel"][disabled],
+.form-control input[type="email"][disabled],
+.form-control input[type="password"][disabled] {
+    border-color: #e2e2e2;
+    background-color: #f4f4f4;
+    color: #999;
+    opacity: 1;
+}
+
+.form-control textarea {
+    line-height: 4;
+    overflow: auto;
+    vertical-align: top;
+}
+
+.form-submit {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.form-submit input,
+.form-submit a { 
+    margin-right: 2px;
+    float: right;
+    clear: both;
+}

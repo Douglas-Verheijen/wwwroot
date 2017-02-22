@@ -1,0 +1,23 @@
+﻿@model Liquid.Home.UI.Models.ContactModel
+
+<div id="contact" class="col">
+    <div class="product-info">
+        <div class="product-info-heading">Contact Info</div>
+        <div class="product-info-content">
+            <p>
+                If you would like to contact Douglas, please fill out the following form and he will contact you as soon as possible:
+            </p>
+            <form ng-controller="contact" ng-submit="submit()" role="form" class="ng-pristine ng-valid ng-scope ng-valid-email">
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+                @Html.NgEditorFor(x => x.Name, new { htmlAttributes = new { email = "", ng_Model = "name" } })
+                @Html.NgEditorFor(x => x.EmailAddress, new { htmlAttributes = new { email = "", ng_Model = "emailAddress" } })
+                @Html.NgEditorFor(x => x.PhoneNumber, new { htmlAttributes = new { phonenumber = "", ng_Model = "phoneNumber" } })
+                @Html.NgTextAreaFor(x => x.Message, new { phonenumber = "", ng_Model = "message" } )
+
+                @Html.NgSubmit()
+            </form>
+        </div>
+    </div>
+</div>
