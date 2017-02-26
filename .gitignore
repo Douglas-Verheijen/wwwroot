@@ -244,3 +244,4 @@ ModelManifest.xml
 .\packages
 .\packages\repositories.config
 **\*.Local.Unity.config
+.\Liquid.Home.UI\Properties\PublishProfiles
